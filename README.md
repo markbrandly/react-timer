@@ -17,3 +17,6 @@ The play/pause button borrows inspiration from Daniel Abdilla's article on CSS-T
 
 ## Images
 
+![counting.png](/sample-iages/counting.png)
+
+![red.png](/sample-iages/red.png)
