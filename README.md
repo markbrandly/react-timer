@@ -17,6 +17,6 @@ The play/pause button borrows inspiration from Daniel Abdilla's article on CSS-T
 
 ## Images
 
-![counting.png](/sample-iages/counting.png)
+![counting.png](https://github.com/markbrandly/react-timer/blob/master/sample-images/counting.png)
 
-![red.png](/sample-iages/red.png)
+![red.png](https://github.com/markbrandly/react-timer/blob/master/sample-images/red.png)
