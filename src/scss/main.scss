@@ -1,0 +1,180 @@
+// Define a color variable
+$color-sassy: #cc4397;
+$color-blue: #0059ff;
+
+*{
+	box-sizing: border-box;
+}
+
+html{
+	height:100%;
+}
+
+body{
+	font-family: 'Roboto';
+	background-color:#eee;
+	height:100%;
+	background: rgb(40,62,75);
+	background: linear-gradient(90deg, rgba(40,62,75,1) 0%, rgba(66,68,96,1) 100%);
+	box-shadow: inset -12px -8px 40px rgba(0,0,0,0.2),
+						 8px 8px 12px 0 rgba(0, 0, 0, 0.25),
+    					-2px -2px 4px 0 rgba(255, 255, 255, 1);
+	color:#ddd;
+	text-shadow:2px 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.coolinput{
+	padding:0.5em;
+	font-size:0.5em;
+	margin:0.5em;
+	background-color: rgba(0,0,0,0);
+    border: 1px dashed #eee;
+    color: #eee;
+	text-shadow:2px 2px 4px rgba(0,0,0,0.1);
+	box-shadow:2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.coolinput::placeholder{
+    	color:rgba(255,255,255,0.5);
+    }
+
+input.fatbutton{
+	color:#ddd;
+	height:100%;
+	padding:0.5em;
+	border:1px solid #ddd;
+	background-color:rgba(0,0,0,0);
+	cursor:pointer;
+	box-shadow:2px 2px 4px rgba(0,0,0,0.1);
+	font-size:0.5em;
+
+			&:active{
+			box-shadow:none;
+		}
+
+	&:hover{
+		background-color:rgba(0,0,0,0.2);
+	}
+}
+
+
+#app {
+  font-size: 2rem;
+  text-align: center;
+  max-width:1080px;
+  margin:0 auto;
+  padding:1em;
+}
+
+.userform{
+	display:inline-flex;
+	margin:0 auto;
+	text-align:center;
+	align-items:center;
+}
+
+.red{
+	color:red;
+}
+
+.blinking {
+  animation: blink-animation 0.5s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.clock{
+	padding:1em;
+}
+
+.alert-text{
+	font-size:0.5em;
+}
+
+.time{
+	display:inline-flex;
+	align-items:center;
+	font-size:4em;
+	font-family: 'Roboto Mono';
+}
+
+.speed-select{
+	font-size:0.5em;
+
+
+	input{
+		display:none;
+	}
+
+	label{
+		user-select:none;
+		display:inline-block;
+		padding:0.5em;
+		margin:0.5em;
+		border:1px dashed #ddd;
+		cursor: pointer;
+		box-shadow:2px 2px 4px rgba(0,0,0,0.1);
+		&:active{
+			box-shadow:none;
+		}
+
+	}
+
+	input:not(:checked) + label:hover{
+		background-color:rgba(0,0,0,0.2);
+	}
+
+	input:checked + label {
+		background-color:#ddd;
+		border:1px solid #ddd;
+		color:rgb(40,62,75);
+	}
+}
+
+
+.pause-button{
+	margin:2em;
+	padding:1em;
+	background-color:rgba(0,0,0,0);
+	cursor:pointer;
+	border:none;
+	border:1px solid #eee;
+	position:relative;
+	top:1em;
+	box-shadow:2px 2px 4px rgba(0,0,0,0.1);
+
+	&:active{
+		box-shadow:none;
+	}
+
+	&:hover{
+		background-color:rgba(0,0,0,0.2);
+	}
+
+	&.pause span{
+		display:block;
+		width: 100%;
+		height: 100%;
+		border-style: solid;
+		border-width: 0.75em 0px 0.75em 1.5em;
+		border-color: transparent transparent transparent #ddd;
+	}
+
+	&.play span{
+		display:block;
+		width: 100%;
+		height: 1.5em;
+		border-style: double;
+		border-width: 0em 0px 0 1.5em;
+		border-color: #ddd;
+	}
+}
